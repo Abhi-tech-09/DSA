@@ -46,7 +46,7 @@ void insert(int data){
         return;
     }
 
-    
+
     Node* prev = NULL;
     Node* curr = root;
     while(curr){
@@ -91,7 +91,11 @@ void postOrder(Node* temp){
 }
 
 int main(){
-    for(int i=0;i<9;i++){
+    int num_node;
+    cout<<"Enter the number of Nodes:";
+    cin>>num_node;
+
+    for(int i=0;i<num_node;i++){
         int x;
         cout<<"Enter data: ";
         cin>>x;
