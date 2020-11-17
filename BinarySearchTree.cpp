@@ -34,16 +34,19 @@ Node*  createTree(){
 }
 
 void insert(int data){
+    //Creating node for insertion.
     Node* temp = new Node();
     temp->data = data;
     temp->left = NULL;
     temp->right = NULL;
 
+    //The first Node created will be root.
     if(root==NULL){
         root = temp;
         return;
     }
 
+    
     Node* prev = NULL;
     Node* curr = root;
     while(curr){
